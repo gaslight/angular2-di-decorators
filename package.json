@@ -4,6 +4,7 @@
   "description": "ecmascript decorators for angular2 dependency injection",
   "main": "dist/angular2-di-decorators.umd.js",
   "jsnext:main": "dist/angular2-di-decorators.es6.js",
+  "registry": "npm",
   "scripts": {
     "build": "rollup -c rollup.config.umd.js && rollup -c rollup.config.es6.js",
     "pretest": "rollup -c rollup.config.test.js",
