@@ -1,0 +1,47 @@
+{
+  "name": "angular2-di-decorators",
+  "version": "0.0.1",
+  "description": "ecmascript decorators for angular2 dependency injection",
+  "main": "dist/angular2-di-decorators.umd.js",
+  "jsnext:main": "dist/angular2-di-decorators.es6.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.umd.js && rollup -c rollup.config.es6.js",
+    "pretest": "rollup -c rollup.config.test.js",
+    "test": "mocha build/test-bundle.js",
+    "prepublish": "npm run build && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaslight/angular2-di-decorators.git"
+  },
+  "keywords": [
+    "angular2",
+    "decorators"
+  ],
+  "author": "Chris Nelson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gaslight/angular2-di-decorators/issues"
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "homepage": "https://github.com/gaslight/angular2-di-decorators#readme",
+  "devDependencies": {
+    "babel-eslint": "^5.0.0-beta6",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "eslint": "^1.10.3",
+    "mocha": "^2.3.4",
+    "reflect-metadata": "^0.1.3",
+    "rollup": "^0.24.1",
+    "rollup-plugin-babel": "^2.3.9",
+    "rollup-plugin-multi-entry": "^1.1.0",
+    "rxjs": "^5.0.0-beta.2",
+    "source-map-support": "^0.4.0"
+  },
+  "dependencies": {
+    "angular2": "^2.0.0-beta.9"
+  }
+}
